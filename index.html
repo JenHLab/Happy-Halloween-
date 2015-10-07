@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Happy Halloween</title>
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <style>
+ .wall {
+            width: auto;
+            height: 400px;
+            background: grey;
+            overflow: hidden;
+        }
+            
+         .animate-wall {
+             background: black;
+        }
+            
+        
+            
+            
+            .letters{
+            font-family: sans-serif;
+            font-size: 20;
+            color: red;
+            text-align: center;
+                
+            }
+            
+            .animateTransform-letters{
+            color: azure;
+                font-size: 40;
+            letter-spacing: 10px; 
+            
+            }
+            
+            .pic{
+            height: 100px;
+            
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div class="row">
+            <div class="12-small columns">
+                <div class="wall">
+                  <div class="letters">Happy Halloween!</div>
+            </div>
+        </div>
+         
+         
+         <img class="pic" src="flami.svg">
+        
+<script src="js/vendor/velocity.js"></script>
+    
+       <script>
+        
+    
+        
+        $( "html" ).click(function() {
+            $(".wall").toggleClass("animate-wall");
+            console.log("click");
+            
+            
+            $(".letters").toggleClass("animateTransform-letters");
+            console.log("click");
+            
+            $(".image").hide(".wall");
+            console.log("click");
+            
+            $(".letters").velocity("fadeIn", { duration: 1 })
+         $(".letters").velocity("fadeOut", { delay: 2, duration: 5 });
+                
+            });
+        
+      
+       
+    </script>
+   
+    </body>
+</html>
+
+
+

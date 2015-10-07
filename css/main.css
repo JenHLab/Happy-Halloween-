@@ -1,0 +1,33 @@
+ .wall {
+            width: auto;
+            height: 400px;
+            background: grey;
+            overflow: hidden;
+        }
+            
+         .animate-wall {
+             background: black;
+        }
+            
+        
+            
+            
+            .letters{
+            font-family: sans-serif;
+            font-size: 20;
+            color: red;
+            text-align: center;
+                
+            }
+            
+            .animateTransform-letters{
+            color: azure;
+                font-size: 40;
+            letter-spacing: 10px; 
+            
+            }
+            
+            .pic{
+            height: 100px;
+            
+            }
